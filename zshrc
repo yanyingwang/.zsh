@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
-PWD=${0:a:h}
 
+cd ${0:a:h}
 
 # auto pull in antibody
 [[ ! -d bundle ]] && mkdir bundle
