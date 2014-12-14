@@ -18,6 +18,7 @@ antibody oh-my-zsh colored-man aliases rails
 
 antibody github yanyingwang/waga
 
+cd $HOME
 #antibody oh-my-zsh <<EOF
 #rails
 #EOF
