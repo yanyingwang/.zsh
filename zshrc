@@ -1,12 +1,14 @@
 #!/usr/bin/env zsh
 
 
-cd ${0:a:h}
 
 # auto pull in antibody
-[[ ! -d bundle ]] && mkdir bundle
-[[ ! -d bundle/antibody ]] && git clone https://github.com/yanyingwang/antibody.git bundle/antibody
-source bundle/antibody/antibody.zsh
+apphome=${0:a:h}
+
+[[ ! -d $apphome/bundle ]] && mkdir $apphome/bundle
+[[ ! -d $apphome/bundle/antibody ]] && git clone https://github.com/yanyingwang/antibody.git $apphome/bundle/antibody
+
+source $apphome/bundle/antibody/antibody.zsh
 
 
 # antibody bundle
@@ -18,7 +20,6 @@ antibody oh-my-zsh colored-man aliases rails
 
 antibody github yanyingwang/waga
 
-cd $HOME
 #antibody oh-my-zsh <<EOF
 #rails
 #EOF
