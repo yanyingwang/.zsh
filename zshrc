@@ -27,3 +27,9 @@ antibody github yanyingwang/waga
 #zsh-syntax-highlighting
 #zsh-history-substring-search 
 #waga
+#
+
+test -f /usr/local/share/chruby/chruby.sh && \
+  source /usr/local/share/chruby/chruby.sh
+
+
