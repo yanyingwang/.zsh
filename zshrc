@@ -19,7 +19,7 @@ antibody github zsh-users/zsh-syntax-highlighting
 #antibody oh-my-zsh colored-man aliases rails
 export ZSH=$apphome/bundle/oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git rails)
+plugins=(git rails colored-man aliases)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -38,8 +38,15 @@ antibody github yanyingwang/waga
 # ruby
 if [[ -f /usr/local/share/chruby/chruby.sh ]]
 then
-  source /usr/local/share/chruby/chruby.sh
-  chruby ruby-2.1.5
+  if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]
+  then
+    source /usr/local/share/chruby/chruby.sh
+    source /usr/local/share/chruby/auto.sh
+    # exec cmd next line to set default version:
+    # echo "ruby-2.1.5" > ~/.ruby-version
+    ##chruby ruby-2.1.5
+    ##chruby ruby-2.0.0
+  fi
 fi
 
 if [[ -f $HOME/.rvm/scripts/rvm ]]
