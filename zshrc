@@ -20,7 +20,7 @@ antibody github zsh-users/zsh-syntax-highlighting
 #antibody oh-my-zsh colored-man aliases rails
 export ZSH=$apphome/bundle/oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git rails colored-man aliases)
+plugins=(git rails colored-man aliases termsupport)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -42,3 +42,8 @@ then
   . $HOME/.rvm/scripts/rvm
 fi
 
+# Prevent Oh-My-Zsh to overwrite the GNU Screen window title
+# and set title
+DISABLE_AUTO_TITLE="true"
+
+title "Terminator"
