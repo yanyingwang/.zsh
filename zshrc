@@ -38,10 +38,9 @@ antibody github yanyingwang/waga
 #
 
 
-if [[ -f $HOME/.rvm/scripts/rvm ]]
-then
-  . $HOME/.rvm/scripts/rvm
-fi
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Prevent Oh-My-Zsh to overwrite the GNU Screen window title
 # and set title
