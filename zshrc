@@ -38,6 +38,8 @@ antibody github yanyingwang/waga
 #
 
 
+export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
