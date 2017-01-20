@@ -21,6 +21,8 @@ antibody github zsh-users/zsh-syntax-highlighting
 export ZSH=$apphome/bundle/oh-my-zsh
 ZSH_THEME="robbyrussell"
 #ZSH_THEME="afowler"
+#ZSH_THEME="sunrise"
+#ZSH_THEME="sorin"
 plugins=(git rails colored-man aliases ruby ubuntu)
 source $ZSH/oh-my-zsh.sh
 
