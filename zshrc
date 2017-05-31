@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 
-
 # auto pull in antibody
 apphome=${0:a:h}
 
@@ -12,12 +11,6 @@ apphome=${0:a:h}
 source $apphome/bundle/antibody/antibody.zsh
 
 
-# antibody bundle
-antibody github zsh-users/zsh-syntax-highlighting
-
-#antibody oh-my-zsh theme robbyrussell
-#antibody oh-my-zsh git
-#antibody oh-my-zsh colored-man aliases rails
 export ZSH=$apphome/bundle/oh-my-zsh
 ZSH_THEME="robbyrussell"
 #ZSH_THEME="afowler"
@@ -25,10 +18,6 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="sorin"
 plugins=(git rails colored-man aliases ruby ubuntu)
 source $ZSH/oh-my-zsh.sh
-
-
-antibody github yanyingwang/waga
-
 
 #antibody oh-my-zsh <<EOF
 #rails
@@ -40,11 +29,23 @@ antibody github yanyingwang/waga
 #
 
 
+
+# antibody bundle
+antibody github zsh-users/zsh-syntax-highlighting
+antibody github zsh-users/zsh-autosuggestions
+antibody github zsh-users/zsh-history-substring-search
+antibody github yanyingwang/waga
+#antibody oh-my-zsh theme robbyrussell
+#antibody oh-my-zsh git
+#antibody oh-my-zsh colored-man aliases rails
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=black"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
+
+
 export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 
 # Prevent Oh-My-Zsh to overwrite the GNU Screen window title
 # and set title
