@@ -47,6 +47,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
+[[ -f "/usr/local/bin/pyenv" ]] && eval "$(pyenv init -)"
+export PYENV_VERSION='3.6.3'
+
+
 # Prevent Oh-My-Zsh to overwrite the GNU Screen window title
 # and set title
 #DISABLE_AUTO_TITLE="true"
