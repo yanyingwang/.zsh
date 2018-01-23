@@ -50,6 +50,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -f "/usr/local/bin/pyenv" ]] && eval "$(pyenv init -)"
 export PYENV_VERSION='3.6.3'
 
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
 
 # Prevent Oh-My-Zsh to overwrite the GNU Screen window title
 # and set title
