@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-
 # auto pull in antibody
 apphome=${0:a:h}
 
@@ -34,12 +33,18 @@ source $ZSH/oh-my-zsh.sh
 antibody github zsh-users/zsh-syntax-highlighting
 antibody github zsh-users/zsh-autosuggestions
 antibody github zsh-users/zsh-history-substring-search
+antibody github supercrabtree/k
 antibody github yanyingwang/waga
+
+
 #antibody oh-my-zsh theme robbyrussell
 #antibody oh-my-zsh git
 #antibody oh-my-zsh colored-man aliases rails
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=black"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
+
+
+
 
 
 export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
