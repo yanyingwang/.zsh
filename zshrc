@@ -57,7 +57,8 @@ export PYENV_VERSION='3.6.3'
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
 
-# Prevent Oh-My-Zsh to overwrite the GNU Screen window title
-# and set title
-#DISABLE_AUTO_TITLE="true"
-#title 'Terminator –'
+export CHEZLIB=$HOME/chezlib
+
+export LC_CTYPE=utf-8
+export LC_ALL=zh_CN.UTF-8
+export LANG=zh_CN.UTF-8
