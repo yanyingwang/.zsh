@@ -46,19 +46,21 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
 
 
 
-
+# ruby
 export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 
+# python
 [[ -f "/usr/local/bin/pyenv" ]] && eval "$(pyenv init -)"
 export PYENV_VERSION='3.6.3'
 
+
+# macos
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
 
-export CHEZLIB=$HOME/chezlib
 
-export LC_CTYPE=utf-8
-export LC_ALL=zh_CN.UTF-8
-export LANG=zh_CN.UTF-8
+# scheme
+export CHEZLIB=$HOME/chezlib
+test -f $HOME/.akku/bin/activate && source $HOME/.akku/bin/activate
