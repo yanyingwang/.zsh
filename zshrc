@@ -15,7 +15,9 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="afowler"
 #ZSH_THEME="sunrise"
 #ZSH_THEME="sorin"
-plugins=(git rails colored-man-pages man aliases ruby ubuntu man brews command-not-found postgres bundler)
+plugins=(brew osx colorize encode64 extract history sudo git
+         ruby rvm rails bundler gem
+         colored-man-pages man aliases ubuntu man command-not-found postgres)
 source $ZSH/oh-my-zsh.sh
 
 #antibody oh-my-zsh <<EOF
