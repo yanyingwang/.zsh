@@ -63,6 +63,9 @@ export PYENV_VERSION='3.6.3'
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
 
 
+
 # scheme
 export CHEZLIB=$HOME/chezlib
-test -f $HOME/.akku/bin/activate && source $HOME/.akku/bin/activate
+export CHEZSCHEMELIBDIRS=$HOME/.chezlib
+export PATH="$PATH:$HOME/bin"  # akku
+export PATH="$PATH:/Applications/Racket v7.1/bin"  # racket
