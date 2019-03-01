@@ -55,8 +55,18 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 
 # python
-[[ -f "/usr/local/bin/pyenv" ]] && eval "$(pyenv init -)"
-export PYENV_VERSION='3.6.3'
+#[[ -f "/usr/local/bin/pyenv" ]] && eval "$(pyenv init -)"
+#export PYENV_VERSION='3.6.3'
+
+
+# js 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 
 # macos
@@ -68,8 +78,10 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
 export CHEZLIB=$HOME/chezlib
 export CHEZSCHEMELIBDIRS=$HOME/.chezlib
 export PATH="$PATH:$HOME/bin"  # akku
-export PATH="$PATH:/Applications/Racket v7.1/bin"  # racket
+#export PATH="$PATH:/Applications/Racket v7.1/bin"  # racket
 
 
 # git
 alias gitignore='git rm --cached'
+
+
