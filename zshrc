@@ -47,6 +47,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
 
 
 
+########################################################
+########################################################
+
 
 # ruby
 export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
@@ -59,10 +62,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 #export PYENV_VERSION='3.6.3'
 
 
-# js 
+# js
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -74,14 +76,11 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
 
 
 
-# scheme
+# chez scheme
 export CHEZLIB=$HOME/chezlib
 export CHEZSCHEMELIBDIRS=$HOME/.chezlib
 export PATH="$PATH:$HOME/bin"  # akku
-#export PATH="$PATH:/Applications/Racket v7.1/bin"  # racket
 
-
-# git
-alias gitignore='git rm --cached'
-
-
+# racket
+export PATH="$PATH:/Applications/Racket v7.2/bin"  # racket
+source /Applications/Racket\ v7.2/share/pkgs/shell-completion/racket-completion.zsh
