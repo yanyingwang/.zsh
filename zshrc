@@ -17,7 +17,7 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="sorin"
 plugins=(brew osx colorize encode64 extract history sudo git
          ruby rvm rails bundler gem
-         colored-man-pages man aliases ubuntu man command-not-found postgres)
+         colored-man-pages man ubuntu man command-not-found postgres)
 source $ZSH/oh-my-zsh.sh
 
 #antibody oh-my-zsh <<EOF
@@ -82,5 +82,8 @@ export CHEZSCHEMELIBDIRS=$HOME/.chezlib
 export PATH="$PATH:$HOME/bin"  # akku
 
 # racket
-export PATH="$PATH:/Applications/Racket v7.2/bin"  # racket
-source /Applications/Racket\ v7.2/share/pkgs/shell-completion/racket-completion.zsh
+if [[ -e "/Applications/Racket\ v7.2" ]]
+then
+	export PATH="$PATH:/Applications/Racket v7.2/bin"  # racket
+	source /Applications/Racket\ v7.2/share/pkgs/shell-completion/racket-completion.zsh
+fi
