@@ -1,0 +1,13 @@
+ZSH_THEME="afowler"
+source $ZSH/oh-my-zsh.sh
+
+
+if [[ $(whoami) == "chronos" ]]; then
+  sudo mount -i -o remount,exec /home/chronos/user
+  if [ -f /usr/local/bin/startnginx ]; then
+    /usr/local/bin/startnginx
+  fi
+  export PGDATA="/usr/local/data/pgsql"
+fi
+
+source /usr/local/share/racket/pkgs/shell-completion/racket-completion.zsh
