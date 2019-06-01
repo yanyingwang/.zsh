@@ -8,6 +8,7 @@ if [[ $(whoami) == "chronos" ]]; then
     /usr/local/bin/startnginx
   fi
   export PGDATA="/usr/local/data/pgsql"
+ #pg_ctl -D /usr/local/data/pgsql -l logfile start
 fi
 
 source /usr/local/share/racket/pkgs/shell-completion/racket-completion.zsh
