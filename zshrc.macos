@@ -2,7 +2,7 @@
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  
 
 
-if [[ -e "/Applications/Racket\ v7.2" ]]
+if [[ -e "/Applications/Racket v7.2" ]]
 then
   export PATH="$PATH:/Applications/Racket v7.2/bin"  # racket
   source /Applications/Racket\ v7.2/share/pkgs/shell-completion/racket-completion.zsh
