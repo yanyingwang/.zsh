@@ -81,3 +81,12 @@ export NVM_DIR="$HOME/.nvm"
 export CHEZLIB=$HOME/chezlib
 export CHEZSCHEMELIBDIRS=$HOME/.chezlib
 export PATH="$PATH:$HOME/bin"  # akku
+
+
+
+
+# ssh tunnel
+alias ssh-tunnel-on='ssh -fN $1'
+alias ssh-tunnel--check='ssh -O check $1'
+alias ssh-tunnel-off='ssh -O exit $1'
+
