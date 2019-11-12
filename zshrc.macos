@@ -22,5 +22,6 @@ fi
 
 # macos
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
-[[ $(uname) == "Darwin" ]] && alias vim='mvim -v'
+#alias vim='mvim -v'
+alias vim='vi'
 
