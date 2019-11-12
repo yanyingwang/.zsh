@@ -16,6 +16,7 @@ fi
 
 # macos
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
-#alias vim='mvim -v'
-alias vim='vi'
+
+# brew install macvim
+alias vim='mvim -v'
 
