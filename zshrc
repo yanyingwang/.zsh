@@ -90,3 +90,9 @@ alias ssh-tunnel-on='ssh -fN $1'
 alias ssh-tunnel--check='ssh -O check $1'
 alias ssh-tunnel-off='ssh -O exit $1'
 
+
+
+# rash-repl
+rash-repl() {
+acket -l rash/repl --
+}
