@@ -1,7 +1,9 @@
-my zsh configuration file
+<img src="https://raw.githubusercontent.com/yanyingwang/.zsh/master/favicon.png" alt="favicon" width="48"/>
+
+# my zsh configuration file
 
 
-# how to use it
+## how to use it
 ```shell
 brew install zsh
 sudo chsh -s $(which zsh) $(whoami)
@@ -10,5 +12,5 @@ echo '. $HOME/.zsh/zshrc' >> $HOME/.zshrc
 ```
 Open a new terminal and wait for a second, everything will be setted.
 
-# features
+## features
 please check zshrc file
