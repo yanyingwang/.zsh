@@ -94,5 +94,5 @@ alias ssh-tunnel-off='ssh -O exit $1'
 
 # rash-repl
 rash-repl() {
-acket -l rash/repl --
+racket -l rash/repl --
 }
