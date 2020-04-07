@@ -2,17 +2,16 @@
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  
 
 
-
-if [[ -e "/Applications/Racket v7.3" ]]; then
-  export PATH="$PATH:/Applications/Racket v7.3/bin"  # racket
-  source /Applications/Racket\ v7.3/share/pkgs/shell-completion/racket-completion.zsh
+if [[ -e "/Applications/Racket v7.6" ]]
+then
+  RACKET_V="v7.6"
+elif [[ -e "/Applications/Racket v7.3" ]]
+then
+  RACKET_V="v7.3"
 fi
 
-if [[ -e "/Applications/Racket v7.6" ]]; then
-  export PATH="$PATH:/Applications/Racket v7.6/bin"  # racket
-  source /Applications/Racket\ v7.6/share/pkgs/shell-completion/racket-completion.zsh
-fi
-
+export PATH="$PATH:/Applications/Racket $RACKET_V/bin"  # racket
+source /Applications/Racket\ $RACKET_V/share/pkgs/shell-completion/racket-completion.zsh
 
 # macos
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
