@@ -96,3 +96,8 @@ alias ssh-tunnel-off='ssh -O exit $1'
 rash-repl() {
 racket -l rash/repl --
 }
+
+
+
+
+export TERM=xterm-256color
