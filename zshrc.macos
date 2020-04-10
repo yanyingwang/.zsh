@@ -20,3 +20,11 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  # for macOS fork
 # brew link --overwirte macvim
 alias vim='mvim -v'
 
+
+# brew install petere/postgresql/postgresql@9.6 
+# brew link -f postgresql@9.6
+# brew install petere/postgresql/postgresql-common
+if [[ -e "/usr/local/opt/postgresql@9.6" ]]
+then
+  export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+fi
