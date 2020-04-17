@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/yanyingwang/.zsh/master/favicon.png" alt="favicon" width="64"/>
+<img src="https://raw.githubusercontent.com/yanyingwang/.zsh/master/favicon.png" alt="favicon" width="120"/>
 
 # my zsh configuration file
 
