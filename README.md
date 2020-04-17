@@ -13,4 +13,5 @@ echo '. $HOME/.zsh/zshrc' >> $HOME/.zshrc
 Open a new terminal and wait for a second, everything will be setted.
 
 ## features
-please check zshrc file
+* please check out the `zshrc` file for the details.
+* please check out a plugin manager of this repo using: https://github.com/yanyingwang/antibody
