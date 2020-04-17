@@ -46,21 +46,26 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
 
 
 
-if [[ $(uname) == "Darwin" ]]; then
+if [[ $(uname) == "Darwin" ]]
+then
   source $apphome/zshrc.macos
 fi
 
 # chromeos crew
-if [[ $(whoami) == "chronos" ]]; then
+if [[ $(whoami) == "chronos" ]]
+then
   source $apphome/zshrc.chromeos
 fi
 
 
 
 # ruby
-export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+if [[ -e "$HOME/.rvm" ]]
+then
+  export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
+  export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+fi
 
 
 
