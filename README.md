@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/yanyingwang/.zsh/master/favicon.png" alt="favicon" width="120"/>
 
-# my zsh configuration file
+ **.zsh** - my zsh configuration file
 
 
 ## how to use it
