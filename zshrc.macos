@@ -2,7 +2,10 @@
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES  
 
 
-if [[ -e "/Applications/Racket v7.6" ]]
+if [[ -e "/Applications/Racket v7.7" ]]
+then
+  RACKET_V="v7.7"
+elif [[ -e "/Applications/Racket v7.6" ]]
 then
   RACKET_V="v7.6"
 elif [[ -e "/Applications/Racket v7.3" ]]
