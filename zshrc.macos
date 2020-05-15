@@ -12,8 +12,8 @@ elif [[ -e "/Applications/Racket v7.3" ]]
 then
   RACKET_V="v7.3"
 fi
-
-export PATH="$PATH:/Applications/Racket $RACKET_V/bin"  # racket
+#export PATH="$PATH:/Applications/Racket $RACKET_V/bin"  # racket
+export PATH="/Applications/Racket $RACKET_V/bin:$PATH"  # racket
 source /Applications/Racket\ $RACKET_V/share/pkgs/shell-completion/racket-completion.zsh
 
 # macos
