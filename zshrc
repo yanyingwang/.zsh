@@ -5,7 +5,7 @@ apphome=${0:a:h}
 
 # init antibody
 [[ ! -d $apphome/bundle ]] && mkdir $apphome/bundle
-[[ ! -d $apphome/bundle/antibody ]] && git clone git@github.com:yanyingwang/antibody.git $apphome/bundle/antibody
+[[ ! -d $apphome/bundle/antibody ]] && git clone https://github.com/yanyingwang/antibody $apphome/bundle/antibody
 source $apphome/bundle/antibody/antibody.zsh
 
 
@@ -116,3 +116,9 @@ export LC_MONETARY="en_US.UTF-8"
 export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
+
+
+
+HISTFILE=~/.zsh_history
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
