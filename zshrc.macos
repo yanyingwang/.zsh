@@ -8,9 +8,9 @@ then
 elif [[ -e "/Applications/Racket v7.6" ]]
 then
   RACKET_V="v7.6"
-elif [[ -e "/Applications/Racket v7.3" ]]
+elif [[ -e "/Applications/Racket v7.8" ]]
 then
-  RACKET_V="v7.3"
+  RACKET_V="v7.8"
 fi
 #export PATH="$PATH:/Applications/Racket $RACKET_V/bin"  # racket
 export PATH="/Applications/Racket $RACKET_V/bin:$PATH"  # racket
