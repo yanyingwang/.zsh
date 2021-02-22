@@ -129,7 +129,6 @@ HISTFILESIZE=$HISTSIZE
 # Avoid duplicates
 HISTCONTROL=ignoredups:erasedups
 # When the shell exits, append to the history file instead of overwriting it
-setopt -s histappend
 # shopt -s histappend
 
 # After each command, append to the history file and reread it
