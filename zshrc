@@ -136,3 +136,10 @@ PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; h
 
 
 
+enable_http_proxy() {
+  export http_proxy=socks5://127.0.0.1:1086
+}
+show_http_proxy() {
+  echo $http_proxy
+}
+
