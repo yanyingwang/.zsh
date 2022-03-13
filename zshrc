@@ -35,7 +35,8 @@ antibody github zsh-users/zsh-autosuggestions
 antibody github zsh-users/zsh-history-substring-search
 antibody github supercrabtree/k
 antibody github yanyingwang/waga
-antibody github psprint/zsh-navigation-tools
+antibody github  z-shell/zsh-navigation-tools
+#antibody github zdharma-continuum/zsh-navigation-tools # psprint/zsh-navigation-tools
 
 
 #antibody oh-my-zsh theme robbyrussell
