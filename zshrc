@@ -16,7 +16,7 @@ ZSH_THEME="robbyrussell"
 #ZSH_THEME="afowler"
 #ZSH_THEME="sunrise"
 #ZSH_THEME="sorin"
-plugins=(brew osx colorize encode64 extract history sudo git
+plugins=(brew colorize encode64 extract history sudo git
          ruby rvm rails bundler gem
          colored-man-pages man ubuntu man command-not-found postgres)
 source $ZSH/oh-my-zsh.sh
@@ -50,6 +50,12 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
 if [[ $(uname) == "Darwin" ]]
 then
   source $apphome/zshrc.macos
+fi
+
+
+if [[ $(uname) == "linux" ]]
+then
+  source $apphome/zshrc.linux
 fi
 
 # chromeos crew
