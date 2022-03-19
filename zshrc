@@ -53,7 +53,7 @@ then
 fi
 
 
-if [[ $(uname) == "linux" ]]
+if [[ $(uname) == "Linux" ]]
 then
   source $apphome/zshrc.linux
 fi
@@ -90,9 +90,9 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # chez scheme
-export CHEZLIB=$HOME/chezlib
-export CHEZSCHEMELIBDIRS=$HOME/.chezlib
-export PATH="$PATH:$HOME/bin"  # akku
+## export CHEZLIB=$HOME/chezlib
+## export CHEZSCHEMELIBDIRS=$HOME/.chezlib
+## export PATH="$PATH:$HOME/bin"  # akku
 
 
 
