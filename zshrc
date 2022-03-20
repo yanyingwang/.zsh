@@ -65,36 +65,8 @@ then
 fi
 
 
-
-# ruby
-if [[ -e "$HOME/.rvm" ]]
-then
-  #export PATH="$PATH:$HOME/.local/bin" # Add home local bin path
-  export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
-  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-fi
-
-
-
-# python
-#[[ -f "/usr/local/bin/pyenv" ]] && eval "$(pyenv init -)"
-#export PYENV_VERSION='3.6.3'
-
-
-# js
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-
-# chez scheme
-## export CHEZLIB=$HOME/chezlib
-## export CHEZSCHEMELIBDIRS=$HOME/.chezlib
-## export PATH="$PATH:$HOME/bin"  # akku
-
-
+source $apphome/zshrc.plangs
+source $apphome/zshrc.racket
 
 
 # ssh tunnel
@@ -104,50 +76,31 @@ alias ssh-tunnel-off='ssh -O exit $1'
 
 
 
-# rash-repl
-rash-repl() {
-racket -l rash/repl --
-}
-
-
-
-
-export TERM=xterm-256color
-export LANG="en_US.UTF-8"
-export LC_COLLATE="en_US.UTF-8"
-export LC_CTYPE="en_US.UTF-8"
-export LC_MESSAGES="en_US.UTF-8"
-export LC_MONETARY="en_US.UTF-8"
-export LC_NUMERIC="en_US.UTF-8"
-export LC_TIME="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
+#export LANG="en_US.UTF-8"
+#export LC_COLLATE="en_US.UTF-8"
+#export LC_CTYPE="en_US.UTF-8"
+#export LC_MESSAGES="en_US.UTF-8"
+#export LC_MONETARY="en_US.UTF-8"
+#export LC_NUMERIC="en_US.UTF-8"
+#export LC_TIME="en_US.UTF-8"
+#export LC_ALL="en_US.UTF-8"
 
 
 
 
 ### history
-HISTFILE=~/.zsh_history
-HISTSIZE=999999999
-SAVEHIST=$HISTSIZE
-HISTFILESIZE=$HISTSIZE
+#HISTFILE=~/.zsh_history
+#HISTSIZE=999999999
+#SAVEHIST=$HISTSIZE
+#HISTFILESIZE=$HISTSIZE
 
 # Avoid duplicates
-HISTCONTROL=ignoredups:erasedups
+#HISTCONTROL=ignoredups:erasedups
 # When the shell exits, append to the history file instead of overwriting it
 # shopt -s histappend
 
 # After each command, append to the history file and reread it
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+#PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 
 
-enable_http_proxy() {
-  export http_proxy=socks5://127.0.0.1:1086
-}
-show_http_proxy() {
-  echo $http_proxy
-}
-
-forg-serve() {
-raco frog -wbpV
-}

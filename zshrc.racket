@@ -1,0 +1,10 @@
+
+# rash-repl
+rash-repl() {
+racket -l rash/repl --
+}
+
+frog-serve() {
+raco frog -wbpV
+}
+
