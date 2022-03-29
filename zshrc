@@ -89,13 +89,13 @@ alias ssh-tunnel-off='ssh -O exit $1'
 
 
 ### history
-#HISTFILE=~/.zsh_history
-#HISTSIZE=999999999
-#SAVEHIST=$HISTSIZE
-#HISTFILESIZE=$HISTSIZE
+HISTFILE=~/.zsh_history
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
+HISTFILESIZE=$HISTSIZE
 
 # Avoid duplicates
-#HISTCONTROL=ignoredups:erasedups
+HISTCONTROL=ignoredups:erasedups
 # When the shell exits, append to the history file instead of overwriting it
 # shopt -s histappend
 
